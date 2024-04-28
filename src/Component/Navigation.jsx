@@ -1,9 +1,10 @@
+import hospital from '../../public/images/hospital.png'
 const Navigation = () =>{
  
   return (
     <nav className="flex bg-blue-500 items-center justify-between">
   <div className="pl-10"> 
-    <img src="images/hospital.png" className="h-14"  alt="" />
+    <img src={hospital} className="h-14"  alt="" />
   </div>
   <ul className="flex text-xl text-pink-800 font-semibold pr-20">
     <li className="mr-10 ">HOME</li>
