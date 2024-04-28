@@ -1,4 +1,5 @@
 import { useState } from "react";
+import reception from '../../public/images/reception.png';
 
 let name;
 let email;
@@ -19,7 +20,8 @@ const Form = () =>{
 
   };
   return (
-  <form onSubmit={onSubmit}
+    <div  className="flex justify-between items-center">
+<form onSubmit={onSubmit}
    className="flex flex-col relative">
     <label htmlFor="" className="ml-14 mt-4">Name</label>
     <input type="text" name="name" className=" border-2 w-96 h-6 p-4 border-black ml-14" />
@@ -31,6 +33,8 @@ const Form = () =>{
   <div>
    { name + " " + email + " " + text} </div>    
   </form>
+  <div> <img src={reception} alt="" /></div>  
+    </div>
   )
 }
 export default Form;
